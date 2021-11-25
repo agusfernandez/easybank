@@ -9,6 +9,10 @@ body{
     font-family: 'Public Sans', sans-serif;    
     line-height: 1.3;
     font-weight: 300;
+
+    &.noscroll{
+        overflow: hidden;
+    }
 }
 
 // add flex globals
@@ -23,6 +27,13 @@ body{
     &-jc-cent{
         align-items: center;
     }
+
+}
+
+
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
 }
 
