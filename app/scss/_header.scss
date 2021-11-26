@@ -25,6 +25,7 @@
         top:0;
         bottom: 0;
         background-image: linear-gradient($darkBlue, transparent);
+        z-index:1;
     }
 
     nav{
@@ -32,7 +33,7 @@
         background-color:$white ;
         padding-top:1.0625rem;
         padding-bottom:1.0625rem;
-
+        z-index:2;
     }
 
     a, a:visited, a:hover{
@@ -73,6 +74,7 @@
         padding: 1.625rem;
         margin-top:1.5rem;
         border-radius: 4px;
+        z-index:1;
 
         a{
             display: block;

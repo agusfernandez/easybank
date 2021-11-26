@@ -72,6 +72,48 @@
           animation: fade-out 300ms ease-in-out forwards;
 }
 
+.info__main__image {
+  position: relative;
+  background-image: url("/images/bg-intro-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 17.5rem;
+}
+
+.info__main__image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-image: url("/images/image-mockups.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 92%;
+}
+
+.info__main__info {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: center;
+}
+
+.info__main__info > h1 {
+  color: #2d314d;
+  margin-top: 20px;
+  font-size: 1.85rem;
+}
+
+.info__main__info > .info__text {
+  font-size: 0.70rem;
+  margin-top: 20px;
+  color: #9698a6;
+  line-height: 1.74em;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -87,6 +129,10 @@ body {
 
 body.noscroll {
   overflow: hidden;
+}
+
+h1 {
+  font-weight: 400;
 }
 
 .flex {
@@ -141,6 +187,15 @@ button, .button {
   }
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
 .header.open .header__menu > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -164,6 +219,7 @@ button, .button {
   bottom: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
   background-image: linear-gradient(#2d314d, transparent);
+  z-index: 1;
 }
 
 .header nav {
@@ -171,6 +227,7 @@ button, .button {
   background-color: white;
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
+  z-index: 2;
 }
 
 .header a, .header a:visited, .header a:hover {
@@ -209,6 +266,7 @@ button, .button {
   padding: 1.625rem;
   margin-top: 1.5rem;
   border-radius: 4px;
+  z-index: 1;
 }
 
 .header__menu__mobile a {

@@ -15,6 +15,10 @@ body{
     }
 }
 
+h1{
+    font-weight: 400;
+}
+
 // add flex globals
 .flex{
     display: flex;
@@ -63,3 +67,6 @@ button, .button{
         display: none;
     }
 }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
