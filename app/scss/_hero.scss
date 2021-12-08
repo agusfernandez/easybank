@@ -1,4 +1,9 @@
 .info__main{
+
+    @include breakpoint-up(large){
+        display: flex;
+        align-items: center;
+    }
   
     &__image{
         position: relative;
@@ -7,6 +12,14 @@
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 17.5rem;
+
+        @include breakpoint-up(large){
+            flex: 3;
+            order: 2;
+            height: 41rem;
+            background-image: url("/images/bg-intro-desktop.svg");
+            background-position: left center;
+        }
 
         &::before{
             content: "";
@@ -25,18 +38,38 @@
     &__info{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        padding-bottom: 2.8rem;
         text-align: center;
+
+        @include breakpoint-up(large){
+            flex: 2;
+            order:1;
+        }
+
         >h1{
             color: $darkBlue;
             margin-top:20px;
             font-size: 1.85rem;
+            @include breakpoint-up(large){
+                font-size: $font-large;
+            }
         }
 
         >.info__text{
             font-size: 0.70rem;
             margin-top: 20px;
+            margin-bottom:30px;
             color: $grayishBlue;
             line-height: 1.74em;
+
+            @include breakpoint-up(large){
+                font-size: $font-medium;
+            }
+        }
+        >  .hero__cta{
+            margin-top:40px;
         }
     }
-}
+    }
+
+  
