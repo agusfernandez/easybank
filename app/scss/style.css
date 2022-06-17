@@ -86,7 +86,7 @@
 .info__main__image {
   position: relative;
   background-image: url("/images/bg-intro-mobile.svg");
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 17.5rem;
@@ -117,7 +117,8 @@
   background-image: url("/images/image-mockups.png");
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: 92%;
+  background-size: contain;
+  top: 20%;
 }
 
 .info__main__info {
@@ -138,20 +139,20 @@
   }
 }
 
-.info__main__info > h1 {
+.info__main__info h1 {
   color: #2d314d;
   margin-top: 20px;
-  font-size: 1.85rem;
+  font-size: 2.31rem;
 }
 
 @media (min-width: 64em) {
-  .info__main__info > h1 {
+  .info__main__info h1 {
     font-size: 2.3rem;
   }
 }
 
-.info__main__info > .info__text {
-  font-size: 0.70rem;
+.info__main__info .info__text {
+  font-size: 0.9rem;
   margin-top: 20px;
   margin-bottom: 30px;
   color: #9698a6;
@@ -159,12 +160,12 @@
 }
 
 @media (min-width: 64em) {
-  .info__main__info > .info__text {
+  .info__main__info .info__text {
     font-size: 1.25rem;
   }
 }
 
-.info__main__info > .hero__cta {
+.info__main__info .hero__cta {
   margin-top: 40px;
 }
 
@@ -187,6 +188,10 @@ body.noscroll {
 
 h1 {
   font-weight: 400;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
 }
 
 .flex {
@@ -229,6 +234,10 @@ button, .button {
   color: white;
   border: 0px;
   font-weight: 700;
+}
+
+button:hover, .button:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 63.937em) {
