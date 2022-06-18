@@ -391,4 +391,20 @@ button:hover, .button:hover {
 .header__cta:hover {
   opacity: 0.75;
 }
+
+@media (min-width: 64em) {
+  .features .feature__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 64em) {
+  .features .feature__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
 /*# sourceMappingURL=style.css.map */
