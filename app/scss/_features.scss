@@ -1,12 +1,27 @@
 .features{
     background-color: $lightGrayishBlue;
+
+    &__intro{
+        h2{
+            font-weight: 400;
+            color: $darkBlue;
+        }
+        p{
+            color:$grayishBlue;
+        }
+    }
     .feature{
         &__grid{
-            @include breakpoint-up(large){
+            @include breakpoint-up(medium){
                 display: flex;
+                flex-wrap: wrap;
             }
         }
         &__item{
+            padding: 0.9375rem;
+            @include breakpoint-up(medium){
+                flex:0 0 50%;
+            }
             @include breakpoint-up(large){
                 flex:1;
             }
