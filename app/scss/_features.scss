@@ -9,6 +9,10 @@
         p{
             color:$grayishBlue;
         }
+
+        @include breakpoint-up(large){
+            width: 60%;
+        }
     }
     .feature{
         &__grid{

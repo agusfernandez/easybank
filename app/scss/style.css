@@ -442,6 +442,12 @@ button:hover, .button:hover {
   color: #9698a6;
 }
 
+@media (min-width: 64em) {
+  .features__intro {
+    width: 60%;
+  }
+}
+
 @media (min-width: 40em) {
   .features .feature__grid {
     display: -webkit-box;
